@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.sass.css">
+</head>
+<body>
+    <section class="big-box">
+        <form class="sm-box">
+            <h1>Contact Us</h1>
+            <p>Name</p>
+            <input type="text" placeholder="Sally Smith" id="name">
+            <div id="name-error"></div>
+            <p>Email</p>
+            <input type="text" placeholder="ssmith@gmail.com" id="email">
+            <div id="email-error"></div>
+            <p>Website</p>
+            <input type="text" placeholder="http://mssmith.net" id="website">
+            <div id="website-error"></div>
+            <p>Message</p>
+            <textarea type="text" placeholder="A friendly message..." id="message"></textarea>
+            <div id="message-error"></div>
+            <button name="button" class="submit-button" id="button">
+                <div class="btn-background"></div>
+                <div class="text" id="btn-text">Submit</div>
+            </button>
+        </form>
+    </section>
+
+    <section id="success">
+        <div>
+            <span>Thanks for contacting us, </span>
+            <span id="contact-name"></span>
+            <span>. We have received your message and will be in touch with you shortly.</span>
+    </section>
+
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>
